@@ -4,6 +4,9 @@ require "rspec"
 require "mocha_standalone"
 require "her"
 
+puts "Testing Faraday v#{Faraday::VERSION}"
+Faraday.require_lib :autoload
+
 RSpec.configure do |c|
   c.mock_with :mocha
 
